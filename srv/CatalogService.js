@@ -56,6 +56,15 @@ module.exports = cds.service.impl( async function() {
 
     });
 
+    this.on('getDummy', async (req,res)=>{
+        const { email } = req.data;
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!email || !emailRegex.test(email)) {
+            return req.error(400, "Invalid email address");
+        }
+        return { message: "Email is valid" };
+    });
+
     //instance bound action
     this.on('boost',async (req,res)=>{
         try {
