@@ -1,0 +1,149 @@
+###Get the service document
+http://localhost:4004/odata/v4/CatalogService
+Authorization: Basic anubhav:
+###Get the service documentcd
+http://localhost:4004/odata/v4/CatalogService/$metadata
+Authorization: Basic anubhav:
+
+###call to show all employees data
+http://localhost:4004/odata/v4/CatalogService/EmployeeSet
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImprdSI6Imh0dHBzOi8vMDBiMzY3NGR0cmlhbC5hdXRoZW50aWNhdGlvbi51czEwLmhhbmEub25kZW1hbmQuY29tL3Rva2VuX2tleXMiLCJraWQiOiJkZWZhdWx0LWp3dC1rZXktMGEwOWYyMTEwMCIsInR5cCI6IkpXVCIsImppZCI6ICJ6cDhYYkJ1bG4zZnlva25pUkNrd1RKOWl6VGl0cTRGQXZNSmpmbzIzVnF3PSJ9.eyJqdGkiOiIwNjhiZjVmNzU0NDg0MThjYTlhZjNlY2Y0MjhkNjJjOCIsImV4dF9hdHRyIjp7ImVuaGFuY2VyIjoiWFNVQUEiLCJzdWJhY2NvdW50aWQiOiI4MGI5YmI1My1mMzVmLTQzY2YtYTYwOC03NzczZjM2NzZhYjMiLCJ6ZG4iOiIwMGIzNjc0ZHRyaWFsIn0sInVzZXJfdXVpZCI6ImE1YTc4ZjYyLTY2ODMtNGIzOS04OTA3LWY5YTY3MzIwOGRhNCIsInhzLnVzZXIuYXR0cmlidXRlcyI6eyJCYW5rTmFtZSI6WyJNeSBCYW5rIG9mIFNhbiBGcmFuY2lzY28iXSwiQ291bnRyeSI6WyJDSCIsIkdCIiwiSU5EIiwiSlAiLCJVUyJdfSwieHMuc3lzdGVtLmF0dHJpYnV0ZXMiOnsieHMucm9sZWNvbGxlY3Rpb25zIjpbIlNBUCBIQU5BIENsb3VkIFZpZXdlciIsIlJDX0JEQ0FQIiwiU0FQIEhBTkEgQ2xvdWQgQWRtaW5pc3RyYXRvciIsIkJ1c2luZXNzX0FwcGxpY2F0aW9uX1N0dWRpb19EZXZlbG9wZXIiLCJCdXNpbmVzc19BcHBsaWNhdGlvbl9TdHVkaW9fQWRtaW5pc3RyYXRvciIsIlN1YmFjY291bnQgQWRtaW5pc3RyYXRvciIsIlNBUCBIQU5BIENsb3VkIFNlY3VyaXR5IEFkbWluaXN0cmF0b3IiXX0sImdpdmVuX25hbWUiOiJCYWFqZWVyYW8iLCJmYW1pbHlfbmFtZSI6IkRhYmhhZGUiLCJzdWIiOiIxMzg4N2EyYy1jZTYyLTRmMzktYThjMy0xZTI2ZDc5NTUyNDUiLCJzY29wZSI6WyJteWNhcGFwcC0wMGIzNjc0ZHRyaWFsLWRldiF0NTE2MjA0LkRpc3BsYXkiLCJvcGVuaWQiXSwiY2xpZW50X2lkIjoic2ItbXljYXBhcHAtMDBiMzY3NGR0cmlhbC1kZXYhdDUxNjIwNCIsImNpZCI6InNiLW15Y2FwYXBwLTAwYjM2NzRkdHJpYWwtZGV2IXQ1MTYyMDQiLCJhenAiOiJzYi1teWNhcGFwcC0wMGIzNjc0ZHRyaWFsLWRldiF0NTE2MjA0IiwiZ3JhbnRfdHlwZSI6InBhc3N3b3JkIiwidXNlcl9pZCI6IjEzODg3YTJjLWNlNjItNGYzOS1hOGMzLTFlMjZkNzk1NTI0NSIsIm9yaWdpbiI6InNhcC5kZWZhdWx0IiwidXNlcl9uYW1lIjoiYmFhamVlcmFvLmRhYmhhZGVAZ21haWwuY29tIiwiZW1haWwiOiJiYWFqZWVyYW8uZGFiaGFkZUBnbWFpbC5jb20iLCJhdXRoX3RpbWUiOjE3NTgxMTcxMzEsInJldl9zaWciOiJjYTlkZjU3NSIsImlhdCI6MTc1ODExNzEzMSwiZXhwIjoxNzU4MTE4MDMxLCJpc3MiOiJodHRwczovLzAwYjM2NzRkdHJpYWwuYXV0aGVudGljYXRpb24udXMxMC5oYW5hLm9uZGVtYW5kLmNvbS9vYXV0aC90b2tlbiIsInppZCI6IjgwYjliYjUzLWYzNWYtNDNjZi1hNjA4LTc3NzNmMzY3NmFiMyIsImF1ZCI6WyJteWNhcGFwcC0wMGIzNjc0ZHRyaWFsLWRldiF0NTE2MjA0Iiwib3BlbmlkIiwic2ItbXljYXBhcHAtMDBiMzY3NGR0cmlhbC1kZXYhdDUxNjIwNCJdfQ.AnEMT-bX-Mb5BJQV-l6LLIXCerinH14NOp4MCxx8ku1AAO0q4h9-djmJlP_SnvJ9LSslmVtSmvdhgwY9w8v3AY6FV3eO90KftFpuG1rsaPeJbB3jBnP39Du8BrsqEkX5RwRH3axo2-HVBmP8zl59OAvwN09KLQyPEBgsUlV50sCQgLTqIdjnfJX2lsKO05EoqqAKzUw-diUoukg9HNm-gZ8rnJoiwmGISFfSmhSr_JADkQku035WAQT9KoLeSK50dubI2zeOf7MtdPcWOe2quD8kKnnQ3OuOtjbd-kg7_7QxhlXOww4_U5IiJ81nBPe6ofwM7hgdop8sd3GIjwXnew
+###Get addresses
+http://localhost:4004/odata/v4/CatalogService/AddressSet
+Authorization: Basic anubhav:
+
+###get the count of the employees
+http://localhost:4004/odata/v4/CatalogService/EmployeeSet/$count
+
+###Get call with the pagination - $top , $skip
+http://localhost:4004/odata/v4/CatalogService/EmployeeSet?$top=2&$skip=2
+
+###select few fields - $select
+http://localhost:4004/odata/v4/CatalogService/EmployeeSet?$select=nameFirst,nameLast,email
+
+###Get call with filtering - $filter
+http://localhost:4004/odata/v4/CatalogService/EmployeeSet?$filter=sex eq 'M'
+
+###Get call with pattern match
+http://localhost:4004/odata/v4/CatalogService/EmployeeSet?$filter=Contains(nameFirst,'Chr')
+
+###Get call to loqd single employee data
+http://localhost:4004/odata/v4/CatalogService/EmployeeSet/1bc236e0-bf5e-451b-a297-11be78a9cc96
+
+###Get call to loqd single employee data- using parantheris
+http://localhost:4004/odata/v4/CatalogService/EmployeeSet('1bc236e0-bf5e-451b-a297-11be78a9cc96')
+
+###POST - to create the new employee
+POST http://localhost:4004/odata/v4/CatalogService/EmployeeSet
+Content-Type: application/json
+
+{
+  "nameFirst": "Christano",
+  "nameMiddle": null,
+  "nameLast": "Ronaldo",
+  "sex": "M",
+  "language": "E",
+  "phoneNumber": null,
+  "email": "cr7@gmail.com",
+  "loginName": "CR7",
+  "currency_code": "EUR",
+  "salaryAmount": 57985,
+  "accountNumber": "54321098",
+  "bankId": "66665555",
+  "bankName": "My Bank of London"
+}
+
+###Fetch the newly created employee data - Christano Ronaldo
+http://localhost:4004/odata/v4/CatalogService/EmployeeSet/892016e9-432c-4131-a0ed-ec4fe2056b13
+
+###PATCH - to update data
+PATCH http://localhost:4004/odata/v4/CatalogService/EmployeeSet/892016e9-432c-4131-a0ed-ec4fe2056b13
+Content-Type: application/json
+
+{
+  "salaryAmount": 10000092,
+  "currency_code": "USD"
+}
+
+###DELETE - to delete the employee data
+DELETE http://localhost:4004/odata/v4/CatalogService/EmployeeSet/5114d472-2499-4b46-87fe-b98788ae2afb
+
+###GET the product data
+http://localhost:4004/odata/v4/CatalogService/ProductSet
+
+###GET the single product and its order data - lazy loading
+http://localhost:4004/odata/v4/CatalogService/ProductSet/74867AD200E41EDBA5D8B06B26EB4052/To_Items
+
+###GET the single product and its order data - lazy loading
+http://localhost:4004/odata/v4/CatalogService/ProductSet/74867AD200E41EDBA5D8B06B26EB4052?$expand=To_Items
+
+###GET the product and its order data - lazy loading
+http://localhost:4004/odata/v4/CatalogService/ProductSet?$expand=To_Items
+
+###GET All the purchase orders
+http://localhost:4004/odata/v4/CatalogService/POs
+
+###GET Single the purchase order data
+http://localhost:4004/odata/v4/CatalogService/POs/74867AD200E41EDBA5D8B0C98DC28052
+
+###GET Single the purchase order data-with expand items data as well
+http://localhost:4004/odata/v4/CatalogService/POs/74867AD200E41EDBA5D8B0C98DC28052?$expand=Items
+
+###POST call to create a PO and item together-deep insert
+POST http://localhost:4004/odata/v4/CatalogService/POs
+content-type: application/json
+
+{
+  "CURRENCY_code": "EUR",
+  "GROSS_AMOUNT": 3913.91,
+  "NET_AMOUNT": 3289,
+  "TAX_AMOUNT": 624.91,
+  "NODE_KEY": "74867AD200E41EDBA5D8B0C98DC99052",
+  "PO_ID": "900000000",
+  "PARTNER_GUID_NODE_KEY": "74867AD200E41EDBA5D8B06885B04052",
+  "LIFECYCLE_STATUS": "N",
+  "OVERALL_STATUS": "A",
+  "Items": [
+    {
+      "CURRENCY_code": "ARS",
+      "GROSS_AMOUNT": 154.7,
+      "NET_AMOUNT": 130,
+      "TAX_AMOUNT": 24.7,
+      "NODE_KEY": "74867AD200E41EDBA5D8B0CBD35AZ952",
+      "PARENT_KEY_NODE_KEY": "74867AD200E41EDBA5D8B0C98DC99052",
+      "PO_ITEM_POS": 10,
+      "PRODUCT_GUID_NODE_KEY": "74867AD200E41EDBA5D8B06B26F60052"
+    },
+    {
+      "CURRENCY_code": "ARS",
+      "GROSS_AMOUNT": 402.22,
+      "NET_AMOUNT": 338,
+      "TAX_AMOUNT": 64.22,
+      "NODE_KEY": "74867AD200E41EDBA5D8B0CBD35AZ152",
+      "PARENT_KEY_NODE_KEY": "74867AD200E41EDBA5D8B0C98DC99052",
+      "PO_ITEM_POS": 20,
+      "PRODUCT_GUID_NODE_KEY": "74867AD200E41EDBA5D8B06B26F06052"
+    }
+  ]
+}
+
+###GET Single the purchase order data-with expand items data as well
+http://localhost:4004/odata/v4/CatalogService/POs/74867AD200E41EDBA5D8B0C98DC99052?$expand=Items
+
+
+###Call the function - which is non-instance bound
+http://localhost:4004/odata/v4/CatalogService/getMostExpensiveOrder()
+
+
+###Trigger an action - instance based
+POST http://localhost:4004/odata/v4/CatalogService/POs/74867AD200E41EDBA5D8B0C98DC28052/CatalogService.boost
+Authorization: Basic ananya:
+Content-Type: application/json
+
+{}
+
+###Trigger an action - instance based
+http://localhost:4004/odata/v4/CatalogService/POs/74867AD200E41EDBA5D8B0C98DC28052
+
+###Get custom service data  
+http://localhost:4004/odata/v4/my/EmployeeSrv

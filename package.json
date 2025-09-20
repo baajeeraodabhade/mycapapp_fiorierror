@@ -1,0 +1,83 @@
+{
+  "name": "mycapapp",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@cap-js/hana": "^2",
+    "@sap/cds": "^9",
+    "@sap/xssec": "^4",
+    "express": "^4"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@cap-js/cds-types": "^0.13.0",
+    "@cap-js/sqlite": "^2",
+    "@sap/cds-dk": ">=8",
+    "@ui5/cli": "^4.0.26",
+    "cds-plugin-ui5": "^0.13.0"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch-managepo": "cds watch --open bd.po.managepo/index.html?sap-ui-xx-viewCache=false --livereload false"
+  },
+  "cds": {
+    "requires": {
+      "auth": {
+        "[production]": {
+          "stratagy": "JWT"
+        },
+        "[development]": {
+          "stratagy": "mocked",
+          "users": {
+            "anubhav": {
+              "roles": [
+                "Viewer",
+                "Editor"
+              ],
+              "userAttributes": {
+                "BankName": [
+                  "My Bank of London"
+                ],
+                "Country": [
+                  "GB"
+                ]
+              }
+            },
+            "ananya": {
+              "roles": [
+                "Editor",
+                "Viewer"
+              ],
+              "userAttributes": {
+                "BankName": [
+                  "My Bank of London"
+                ],
+                "Country": [
+                  "US",
+                  "IND",
+                  "JP"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "[production]": {
+        "auth": {
+          "kind": "mocked"
+        }
+      }
+    }
+  },
+  "workspaces": [
+    "app/*"
+  ],
+  "sapux": [
+    "app/managepo"
+  ]
+}
