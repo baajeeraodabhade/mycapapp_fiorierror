@@ -54,5 +54,5 @@ service CatalogService @(path:'CatalogService', requires: 'authenticated-user') 
     // a non instanmce bound function -- if you want multiple=> array of
     function getMostExpensiveOrder() returns POs;
     function getOrderDefault() returns POs;
-    
+    function getDummy() returns String;
 }
